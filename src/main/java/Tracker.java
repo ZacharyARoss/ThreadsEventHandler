@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Map;
 
 public interface Tracker {
@@ -7,4 +8,6 @@ public interface Tracker {
     Boolean has(String message);
 
     void handle(String message, EventHandler e);
+
+    Map<String, Integer> tracker();
 }
